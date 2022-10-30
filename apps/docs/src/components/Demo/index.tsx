@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 
 export const Demo = (props: { children: ReactNode }) => {
   const { children } = props;
-  const ref = useRef<HTMLElement>();
+  const ref = useRef<HTMLDivElement>();
   const { angle } = useWheresMyCursor(ref);
   return (
     <div className={styles.wrapper} ref={ref} style={{ '--angle': `${angle.degrees}deg` }}>
