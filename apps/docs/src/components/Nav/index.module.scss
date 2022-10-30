@@ -1,0 +1,16 @@
+@import '../../styles/utils';
+
+.wrapper {
+  width: $nav-width;
+  height: 100%;
+  position: relative;
+}
+
+.nav {
+  position: fixed;
+  width: $nav-width;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-right: 1px solid $color-accent;
+}

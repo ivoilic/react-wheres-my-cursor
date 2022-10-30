@@ -1,0 +1,7 @@
+$hue: var(--base-hue, 240deg);
+$color-accent: hsl(#{$hue}, 30%, 30%);
+$color-higlight: hsl(#{$hue}, 30%, 60%);
+$color-dark: hsl(#{$hue}, 100%, 4%);
+$color-light: #fff;
+
+$nav-width: 14rem;
