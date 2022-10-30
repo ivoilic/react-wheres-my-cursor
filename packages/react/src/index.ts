@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useCallback, useState, RefObject } from 'react';
 
-const useWheresMyCursor = (ref: RefObject<HTMLElement | undefined>) => {
+const useWheresMyCursor = (ref: RefObject<HTMLElement>) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 });
 
