@@ -1,4 +1,4 @@
-import { Demo } from '~/components';
+import { Demo } from '~/components/Demo';
 import styles from './page.module.scss';
 
 export default function Home() {

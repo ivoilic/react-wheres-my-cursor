@@ -8,13 +8,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    var(--angle, 0deg),
-    $color-dark 0%,
-    $color-accent 60%,
-    $color-accent 80%,
-    $color-higlight 100%
-  );
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  &::before {
+    content: '';
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(var(--angle));
+    background: linear-gradient(
+      180deg,
+      $color-dark 0%,
+      $color-dark 40%,
+      $color-accent 60%,
+      $color-accent 70%,
+      $color-higlight 80%,
+      $color-higlight 100%
+    );
+    // background: linear-gradient(0deg, red 50%, blue 50%);
+  }
 }
 
 .demo {
