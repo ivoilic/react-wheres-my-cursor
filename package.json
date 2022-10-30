@@ -1,0 +1,27 @@
+{
+  "name": "wheres-my-cusor",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "build": "turbo run build",
+    "build:docs": "turbo run build --scope=docs --include-dependencies --no-deps",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev --parallel",
+    "dev:react": "turbo run dev --scope=@wheres-my-cursor/react --parallel --no-deps",
+    "dev:docs": "turbo run dev --scope=docs --parallel --no-deps",
+    "typecheck": "turbo run typecheck --include-dependencies --no-deps",
+    "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ivo Ilic",
+    "url": "https://ivoilic.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "turbo": "^1.6.2"
+  }
+}

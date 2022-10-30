@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": ["./apps/docs", "./packages/react"],
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#ea651e",
+    "titleBar.activeForeground": "#000000",
+    "titleBar.inactiveBackground": "#ea651e",
+    "titleBar.inactiveForeground": "#000000"
+  }
+}
