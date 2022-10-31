@@ -1,6 +1,6 @@
-import { useEffect, useCallback, useState, MutableRefObject } from 'react';
+import { useEffect, useCallback, useState, RefObject } from 'react';
 
-const useWheresMyCursor = (ref: MutableRefObject<HTMLElement | null>) => {
+export const useWheresMyCursor = (ref: RefObject<HTMLElement | null>) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 });
 
@@ -41,5 +41,3 @@ const useWheresMyCursor = (ref: MutableRefObject<HTMLElement | null>) => {
     },
   };
 };
-
-export { useWheresMyCursor };
