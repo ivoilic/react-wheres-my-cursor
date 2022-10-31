@@ -61,5 +61,8 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.8.4",
     "vite": "^3.2.1"
+  },
+  "dependencies": {
+    "valtio": "^1.7.5"
   }
 }
