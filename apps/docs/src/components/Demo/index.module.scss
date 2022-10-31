@@ -11,6 +11,9 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
+  color: $color-accent;
+  transition: color 0.3s ease-out;
+  cursor: default;
   &::before {
     content: '';
     top: -50%;
@@ -30,6 +33,24 @@
       $color-higlight 100%
     );
     // background: linear-gradient(0deg, red 50%, blue 50%);
+  }
+  &::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: $color-higlight;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  &:hover {
+    color: $color-higlight;
+    &::after {
+      opacity: 1;
+    }
   }
 }
 
